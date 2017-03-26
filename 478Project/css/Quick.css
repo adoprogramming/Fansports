@@ -1,0 +1,346 @@
+/*
+File Name: UserHome.css
+
+Version 1.0.2
+CSC 478 Group Project
+Group: FanSports
+Wesley Elliot, Jeremy Jones, Ann Oesterle
+Last Updated: 11/13/2016
+*/
+
+/*    Design Notes:
+Main Blue: #112B6D
+Accent Blue: #3665DB
+Dark Grey Accent: #2c313e
+Light Grey Accent:#f8f9fa
+Orange:#fc850f
+Yellow: #f0d023
+*/
+
+
+html{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin:0;
+
+  font-family: "Arial", Helvetica, sans-serif;
+
+  background-color: black;
+}
+body{
+  margin:0;
+  padding:0;
+}
+/******Begin Vertical header******/
+header{ 
+
+  width: 15%;
+  height: 99vh;
+  margin:0;
+  padding:3px;
+  display:inline-block;
+  position:fixed;
+  top:0;
+  left:0;
+
+  background-color: black;
+
+}
+/* div verticalHeader_top contains logo, logout and home links*/
+div.verticalHeader_top{
+  height:30%;
+  text-align:center;
+}
+img.logo{
+  width:78%;
+  padding:0px;
+  margin:0px;
+  margin-left:auto;
+  margin-right:auto;
+
+  margin-top:8%;
+  text-align:center;
+  vertical-align:top;
+  display:inline-block;
+
+}
+p.homeLink{
+  width:30%;
+  height:10%;
+  margin:0px;
+  margin-top:1.5em;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0.2em;
+  padding-left:1em;
+  padding-right:1em;
+  color: #f8f9fa;
+  background-color:#2c313e;
+  border-radius: 3px;
+  box-shadow: -2px -2px 5px #112B6D inset,
+    1px 1px 3px #112B6D inset;
+  font-size:120%;
+  text-align:center;
+  text-decoration:none;
+  display:block;
+
+  /*text-shadow: 2px 2px 2px #3665DB;*/
+
+}
+p.homeLink:hover{
+  cursor:pointer;
+  box-shadow: -2px -2px 5px #3665DB inset,
+    1px 1px 3px #3665DB inset;
+  text-shadow: 2px 2px 2px #3665DB;
+}
+p.logoutLink{
+  margin:0;
+  padding-top:.8em;
+  color: #f8f9fa;
+  font-size:110%;
+  text-align:center;
+  text-decoration:underline;
+  display:block;
+
+}
+p.logoutLink:hover{
+  cursor:pointer;
+  text-shadow: 2px 2px 2px #3665DB;
+}
+
+/*bottom div, contains general information about app*/
+div.verticalHeader_info{
+
+  height:30%;
+  margin:0px;
+  padding:3em;
+  font-size:80%;
+  color: #f8f9fa;
+
+  display:inline-block;
+  position:absolute;
+  left:0;
+  bottom:0;
+  text-align:center;
+
+}
+a.license{
+  color: #f8f9fa;
+  margin:0;
+  padding:.1em;
+  padding-top:4em;
+  font-size:100%;
+  text-align:center;
+  display:block;
+
+}
+a.aboutLink{
+  color: #3665DB;
+  margin:0;
+  padding:0px;
+  font-size:120%;
+  text-align:center;
+  display:block;
+}
+a.aboutLink:hover{
+  text-shadow: 1px 1px 1px #3665DB;
+}
+img.ccimage{
+  height:auto;
+  width:80%;
+  padding:2px;
+  margin:0px;
+  margin-left:auto;
+  margin-right:auto;
+  display:inline-block;
+}
+/******End Vertical header containing logo and logout link******/
+
+/*vertical header on left, main is the rest of the content to the right of header*/
+main{
+  margin-left:16%;
+  margin-right:1%;
+  width: 83%;
+  padding:0px;
+  margin-top:4vh;
+  display:inline-block;
+  background-color: #000000;
+  text-align:center;
+}
+
+/***********************************************/
+/****** BEGIN styling for Quick Match Page******/
+
+/*DIV that contains who won*/
+h1.matchTitle{
+  font-size:300%;
+  padding:.3em;
+  padding-bottom:.5em;
+  margin:0px;
+/*  margin-left:auto;
+  margin-right:auto;*/
+  position:static;
+  /*color:orange;*/
+  text-align:center;
+  color:#112B6D;
+}
+div.winnerInfo{
+  width:75%;
+  height:auto;
+  padding:0;
+  margin:0;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:2em;
+  /*border:2px solid #f8f9fa;*/
+  background-color:#000000;
+  color:yellow;
+  position:static;
+  display:block;
+}
+
+div.bothTeams{/**/
+  width:98%;
+  height:auto;
+  margin:0;
+  margin-left:auto;
+  margin-right:auto;
+  /*background-color:orange;*/
+  padding:0;
+  display:block;
+  /*text-align:left;*/
+  /*position:static;*/
+}
+table.resultsTeam1{
+  width:40%;
+  height:auto;
+  padding:0;
+  /*padding-top:.2em;*/
+  margin:0;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:#f8f9fa;
+  color:#112B6D;
+  font-size:100%;
+  text-align:left;
+  display:inline-block;
+  vertical-align:top;
+}
+table.resultsTeam1 tr.header{
+  text-align:left;
+  width:auto;
+  font-weight:bold;
+}
+table.resultsTeam1 tr.header th{
+  text-align:left;
+  padding:.7em;
+  padding-left:.7em;
+  font-weight:bold;
+}
+table.resultsTeam1 td.scoreData{
+  padding:.7em;
+  padding-left:2em;
+
+}
+table.resultsTeam1 td.rosterName{
+  width:20%;
+  padding:.7em;
+
+
+}
+table.resultsTeam1 td.scoreTotal{
+  /*width:20%;*/
+  padding:.7em;
+
+
+}
+table.resultsTeam1 td.name{
+  width:50%;
+  margin:.7em;
+  padding-left:1em;
+
+}
+table.resultsTeam1 td.score{
+  width:auto;
+  margin:.7em;
+  padding-left:1em;
+
+}
+/*Spacer between team1 and team2*/
+div.scoreSpacer{
+  width:5%;
+  display:inline-block;
+  margin:0;
+  padding:0;
+}
+
+table.resultsTeam2{
+  width:40%;
+  height:auto;
+  padding:0;
+  /*padding-top:.2em;*/
+  margin:0;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:#f8f9fa;
+  color:#112B6D;
+  font-size:100%;
+  text-align:left;
+  display:inline-block;
+  vertical-align:top;
+}
+table.resultsTeam2 tr.header{
+  text-align:left;
+  width:auto;
+  font-weight:bold;
+}
+table.resultsTeam2 tr.header th{
+  text-align:left;
+  padding:.7em;
+  padding-left:.7em;
+  font-weight:bold;
+}
+table.resultsTeam2 td.scoreData{
+  padding:.7em;
+  padding-left:2em;
+
+}
+table.resultsTeam2 td.rosterName{
+  width:20%;
+  padding:.7em;
+
+
+}
+table.resultsTeam2 td.name{
+  width:50%;
+  margin:.7em;
+  padding-left:1em;
+
+}
+table.resultsTeam2 td.score{
+  width:auto;
+  margin:.7em;
+  padding-left:1em;
+
+}
+table.resultsTeam2 td.scoreTotal{
+  /*width:20%;*/
+  padding:.7em;
+
+
+}
+/*DIV that contains the list of both teams*/
+div.draftTeams{
+  width:100%;
+  height:auto;
+  padding:0;
+  margin:0;
+  /*background-color:purple;*/
+  display:inline-block;
+}
+
+
+
+/****** END styling for Quick Match page******/
+
